@@ -32,19 +32,19 @@ const Cliente = () => {
                     <div style={{padding: "10px"}} className="col-md">
                         <div>
                             <label>Nome</label>
-                            <input type="text" id="cliNome" value={cliente.cliNome || ""} onChange={(e) => handleChange(e, e.target.value)} className="form-control"></input>
+                            <input type="text" id="NomeCliente" value={cliente.NomeCliente || ""} onChange={(e) => handleChange(e, e.target.value)} className="form-control"></input>
                         </div>
                     </div>
                     <div style={{padding: "10px"}} className="col-md">
                         <div >
                             <label>CPF/CNPJ</label>
-                            <input type="text" id="cliCpfcnpj"value={cliente.cliCpfcnpj || ""} onChange={(e) => handleChange(e, e.target.value)} className="form-control"></input>
+                            <input type="text" id="CPF"value={cliente.CPF || ""} onChange={(e) => handleChange(e, e.target.value)} className="form-control"></input>
                         </div>
                     </div>
                     <div style={{padding: "10px"}} className="col-md">
                         <div >
                             <label>Nome da Mae</label>
-                            <input type="text" id="cliNomeMae" value={cliente.cliNomeMae || ""} onChange={(e) => handleChange(e, e.target.value)}className="form-control"></input>
+                            <input type="text" id="NomeMae" value={cliente.NomeMae || ""} onChange={(e) => handleChange(e, e.target.value)}className="form-control"></input>
                         </div>
                     </div>
                 </div>
@@ -52,19 +52,25 @@ const Cliente = () => {
                     <div style={{padding: "10px"}} className="col-md">
                         <div>
                             <label>Data de Nascimento</label>
-                            <input type="date" id="cliDataNascimento" defaultValue={cliente.cliDataNascimento } onChange={(e) => handleChange(e, e.target.value)}className="form-control"></input>
+                            <input type="date" id="DataNascimento" defaultValue={cliente.DataNascimento } onChange={(e) => handleChange(e, e.target.value)}className="form-control"></input>
                         </div>
                     </div>
                     <div style={{padding: "10px"}} className="col-md">
                         <div >
                             <label>Email</label>
-                            <input type="email" id="cliEmail"value={cliente.cliEmail || "" } onChange={(e) => handleChange(e, e.target.value)}className="form-control"></input>
+                            <input type="email" id="Email"value={cliente.Email || "" } onChange={(e) => handleChange(e, e.target.value)}className="form-control"></input>
                         </div>
                     </div>
                     <div style={{padding: "10px"}} className="col-md-1">
                         <div >
                             <label>Sexo</label>
-                            <input type="text" id="cliSexo" value={cliente.cliSexo || "" }onChange={(e) => handleChange(e, e.target.value)}className="form-control"></input>
+                            <input type="text" id="Sexo" value={cliente.Sexo || "" }onChange={(e) => handleChange(e, e.target.value)}className="form-control"></input>
+                        </div>
+                    </div>
+                    <div style={{padding: "10px"}} className="col-md-1">
+                        <div >
+                            <label>Telefone</label>
+                            <input type="tel" id="Telefone" value={cliente.Telefone || "" }onChange={(e) => handleChange(e, e.target.value)}className="form-control"></input>
                         </div>
                     </div>
                 </div>

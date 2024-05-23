@@ -9,5 +9,5 @@ export async function GetClienteById(id){
 }
 
 export async function PostCliente(cliente){
-    return await Api.post("/cliente/postcliente", cliente);
+    return await Api.post("/cliente", cliente);
 }
