@@ -78,7 +78,7 @@ const Cliente = () => {
             </div>
 
             <div>
-                <table className="table table-stripped">
+                <table className="table table-striped">
                     <thead>
                         <tr>
                             <th>
@@ -86,6 +86,12 @@ const Cliente = () => {
                             </th>
                             <th>
                                 CPF/CNPJ
+                            </th>
+                            <th>
+                                Telefone
+                            </th>
+                            <th>
+                                Email
                             </th>
                         </tr>
                     </thead>
@@ -99,6 +105,12 @@ const Cliente = () => {
                                     </td>
                                     <td key={"col_"+cliente.cliCpfcnpj}>
                                         {cliente.cliCpfcnpj}
+                                    </td>
+                                    <td key={"col_"+cliente.cliTelefone}>
+                                        {cliente.cliTelefone}
+                                    </td>
+                                    <td key={"col_"+cliente.cliEmail}>
+                                        {cliente.cliEmail}
                                     </td>
                                 </tr>
                             )
