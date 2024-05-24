@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { GetClientes, PostCliente } from "../../../services/serviceCliente";
 import '../cliente/cliente.css';
+import { Link } from "react-router-dom";
 
 
 const Cliente = () => {
@@ -13,6 +14,7 @@ const Cliente = () => {
         setCliente({...cliente});
         
     }
+
     const handleSalvar = () =>{
         console.log("cliente",cliente);
         PostCliente(cliente).then(res => {console.log(res.data)});
@@ -93,6 +95,9 @@ const Cliente = () => {
                             <th>
                                 Email
                             </th>
+                            <th>
+                                Ação
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -111,6 +116,9 @@ const Cliente = () => {
                                     </td>
                                     <td key={"col_"+cliente.cliEmail}>
                                         {cliente.cliEmail}
+                                    </td>
+                                    <td>
+                                      <Link className="btn btn-secondary" to={"/" + cliente.cliCodigo} >Editar</Link>
                                     </td>
                                 </tr>
                             )
